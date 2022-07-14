@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <title>HTML</title>
     <style>
+        
+        body {
+            font-size: 16px;
+        }
 
         h1{
             width: 65px;
             color: orange;
+            font-family: sans-serif;
+            font-style: italic;
         }
 
             /* #Lista-cores {
@@ -17,6 +23,27 @@
         
         .Cor-fundo {
             background-color: palevioletred;
+            line-height: 200%;
+            text-align: center;
+        }
+         
+
+        p{
+            font-weight: 600;
+            font-size: 3em;
+            
+        }
+
+        #am{
+            background-color: yellow;
+        }
+
+        #ver{
+            background-color: red;
+        }
+
+        #mar{
+            background-color: brown;
         }
 
 
@@ -31,9 +58,9 @@
     <h1>Exercícios 3.2 </h1>
     <p class="Cor-fundo">Qual é a sua cor favorita?</p>
     <ul id="Lista-cores" class="Cor-fundo">
-      <li>Amarelo</li>
-      <li>Vermelho</li>
-      <li>Marrom</li>
+      <li id="am">Amarelo</li>
+      <li id="ver">Vermelho</li>
+      <li id="mar">Marrom</li>
     </ul>
   </body>
 </html>
