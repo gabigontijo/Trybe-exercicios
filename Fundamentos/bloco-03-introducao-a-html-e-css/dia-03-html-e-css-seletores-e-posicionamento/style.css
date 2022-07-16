@@ -1,54 +1,58 @@
-div:hover {
- background-color: #b37e89;
+li {
+  background-color: yellow;
+  font-size: 20px;
+  
 }
 
-div:nth-of-type(1) {
-  background-color: blue;
-}
-div:nth-of-type(2) {
-  background-color: green;
-}
-div:nth-of-type(3) {
-  background-color: red;
-  height: 50px;
-}
-div:nth-of-type(4) {
-  background-color: black;
-}
-div:nth-of-type(5) {
-  background-color: wheat;
-}
-div:nth-of-type(1) h3 {
-  border: solid 3px;
-  border-color: rgb(241, 128, 204);
- 
-}
-div:nth-of-type(2) h3 {
-  border: solid 3px;
-  border-color: rgb(216, 23, 32);
+li.par{
+  color: green;
 }
 
-div:nth-of-type(3) h3 {
-  border: solid 3px;
-  border-color: rgb(10, 184, 62);
+li.impar{
+  text-transform: uppercase;
 }
 
-div:nth-of-type(4) h3 {
-  border: solid 3px;
-  border-color: rgb(87, 180, 235);
-  color: aliceblue;
+h1, h2, h3 {
+  color: red;
 }
 
-div:nth-of-type(5) h3 {
-  border: solid 3px;
-  border-color: rgb(207, 77, 1);
+h1.Italic {
+  font-size: 40px;
+  border: 1px solid black;
 }
 
-div:nth-of-type(2n + 1) h3 {
-  font-style: italic;
+li.Italic {
+  font-weight: bold;
 }
 
+.blue{
+  color: blue;
+}
 
+.rosa {
+  background-color: palevioletred;
+}
+
+a#laranja:hover{
+  font-weight: bold;
+  color: orange;
+  
+}
+ a.verde:hover {
+  font-weight: bold;
+  color: green;
+ }
+
+ a#amarela:hover{
+  font-weight: bold;
+  color: rgba(190, 157, 46, 0.822);
+  
+}
+ a#preta:hover{
+  font-weight: bold;
+  color: black;
+  
+}
 
 
 
