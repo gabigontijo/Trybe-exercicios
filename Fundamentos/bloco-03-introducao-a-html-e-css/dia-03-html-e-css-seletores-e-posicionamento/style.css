@@ -1,0 +1,58 @@
+li {
+  background-color: yellow;
+  font-size: 20px;
+  
+}
+
+li.par{
+  color: green;
+}
+
+li.impar{
+  text-transform: uppercase;
+}
+
+h1, h2, h3 {
+  color: red;
+}
+
+h1.Italic {
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+li.Italic {
+  font-weight: bold;
+}
+
+.blue{
+  color: blue;
+}
+
+.rosa {
+  background-color: palevioletred;
+}
+
+a#laranja:hover{
+  font-weight: bold;
+  color: orange;
+  
+}
+ a.verde:hover {
+  font-weight: bold;
+  color: green;
+ }
+
+ a#amarela:hover{
+  font-weight: bold;
+  color: rgba(190, 157, 46, 0.822);
+  
+}
+ a#preta:hover{
+  font-weight: bold;
+  color: black;
+  
+}
+
+
+
