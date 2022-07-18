@@ -1,0 +1,26 @@
+.first {
+    margin: auto;
+}
+
+.second,
+.third {
+    display: inline-block;
+
+}
+
+.second {
+    margin-left: 33%;
+}
+
+h3 {
+    text-align: center;
+}
+
+.list ul {
+    margin: auto;
+    text-align: center;
+}
+
+.list ul li {
+    display: inline;
+}
