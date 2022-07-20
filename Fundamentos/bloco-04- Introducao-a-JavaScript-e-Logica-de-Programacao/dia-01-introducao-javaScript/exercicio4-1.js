@@ -47,4 +47,46 @@ else{
   console.log('O número é Zero');
 }
 
+//exercicio 5
+const lado1 = 60;
+const lado2 = -60;
+const lado3 = 60;
+
+if (lado1 > 0 && lado2 > 0 && lado3 > 0 && lado1 + lado2 + lado3 === 180){
+    console.log('true');
+}
+else if(lado1 > 0 && lado2 > 0 && lado3 > 0 && lado1 + lado2 + lado3 !== 180 ){
+    console.log('false');
+}
+else{
+  console.log('erro');
+}
+
+//exercicio 6
+let xadrez = 'Rainha';
+let xadrezText = xadrez.toLowerCase();
+
+switch (xadrezText){
+    case 'bispo':
+        console.log('sentido diagonal');
+        break
+    case 'rei':
+    case 'rainha':
+    case 'torre':
+        console.log('Qualquer direção do tabuleiro');
+        break
+    case 'cavalo':
+        console.log('Movimento em L')
+        break
+    case 'peao':
+        console.log('movimentos frontais')
+        break
+    default:
+        console.log('erro');
+
+
+     
+}
+
+
 
