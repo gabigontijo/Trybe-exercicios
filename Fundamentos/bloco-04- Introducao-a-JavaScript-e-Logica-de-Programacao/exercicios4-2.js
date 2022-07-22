@@ -16,3 +16,53 @@ console.log(indexOfPortfolio);
 menu.push('Contato');
 console.log(menu);
 
+// exercicio 1 for
+
+let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
+
+for(let index = 0; index < groceryList.length; index += 1){
+    console.log(groceryList[index]);
+}
+
+//exercicio 1 for/of
+
+let names = ['João', 'Maria', 'Antônio', 'Margarida'];
+
+for(let name of names){
+    console.log(name);
+}
+
+// exercicio 1
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+for(let number of numbers){
+    console.log(number);
+}
+
+// exercicio 2
+count = 0;
+for( let soma = 0; soma< numbers.length; soma += 1){
+    count = numbers[soma] + count;
+}
+
+console.log(count);
+
+// exercicio 3
+ let mediaAritmetica = count/(numbers.length);
+ console.log(mediaAritmetica);
+
+ // exercicio 4
+ if (mediaAritmetica > 20){
+    console.log('valor maior que 20');
+
+ }else {
+    console.log('valor menor ou igual a 20');
+ }
+
+ //exercicio 5
+ let maiorNumero = 0;
+ for(let m = 0; m < numbers.length; m += 1){
+    if( numbers[m] > maiorNumero){
+        maiorNumero = numbers[m];
+    }
+ }
+ console.log(maiorNumero);
