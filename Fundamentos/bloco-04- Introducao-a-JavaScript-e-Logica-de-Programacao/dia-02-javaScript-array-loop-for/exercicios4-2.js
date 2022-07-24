@@ -66,3 +66,35 @@ console.log(count);
     }
  }
  console.log(maiorNumero);
+
+ //exercicio 6
+ let impares=0;
+ for (let i =0; i< numbers.length; i +=1){
+    if(numbers[i]%2 !== 0){
+        impares += 1;
+    }
+ }
+
+ if(impares > 0){
+    console.log('numeros impares = ' + impares);
+ } else{
+    console.log('nenhum valor impare encontrado');
+ }
+
+ // exercicio 7
+let menorNumero = Infinity;
+for(let i = 0; i< numbers.length; i += 1){
+    if(numbers[i] < menorNumero){
+        menorNumero = numbers[i];
+    }
+}
+console.log('Menor numero do array é: ' + menorNumero);
+
+// exercicio 8
+let array25 = [];
+let arrayElement = 0;
+for (let i = 0; i<25; i += 1){
+    arrayElement += 1
+    array25.push(arrayElement);
+}
+console.log(array25);
