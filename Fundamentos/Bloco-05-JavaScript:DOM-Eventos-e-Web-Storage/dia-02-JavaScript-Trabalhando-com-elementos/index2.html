@@ -57,7 +57,69 @@
   </head>
   <body>
     <script>
-      // COLOQUE SEU CÓDIGO AQUI
+      const body = document.getElementsByTagName('body')[0];
+      const bodySon = document.createElement('h1');
+      bodySon.innerText = 'Exercício 5.2 - JavaScript DOM ';
+      body.appendChild(bodySon);
+
+      const main = document.createElement('main');
+      main.className = 'main-content';
+      body.appendChild(main);
+
+      const center = document.createElement('section');
+      center.className = 'center-content'
+      main.appendChild(center);
+
+      const tagText = document.createElement('p');
+      tagText.innerText = 'Desenvolvendo habiliades DOM';
+      center.appendChild(tagText);
+
+      const left = document.createElement('section');
+      left.className = 'left-content';
+      main.appendChild(left);
+
+      const rigth = document.createElement('section');
+      rigth.className = 'rigth-content';
+      main.appendChild(rigth);
+
+      const img = document.createElement('img');
+      img.src = 'https://picsum.photos/200';
+      img.className = 'small-image';
+      left.appendChild(img);
+
+      const unOrderList = document.createElement('ul');
+      rigth.appendChild(unOrderList);
+      unOrderList.className ='ul'
+
+      let listLi = document.querySelector('ul');
+
+      let numbersItems = [
+        'um',
+        'dois',
+        'três',
+        'quatro',
+        'cinco',
+        'seis',
+        'sete',
+        'oito',
+        'nove',
+        'dez'
+      ];
+
+      for (let i = 0; i < numbersItems.length; i += 1) {
+        let number = numbersItems[i];
+
+        let listNumbers = document.createElement('li');
+        listNumbers.innerText = number;
+
+        unOrderList.appendChild(listNumbers);
+      }
+
+      for ( let i = 0; i <= 3; i += 1) {
+        let h3 = document.createElement('h3');
+        main.appendChild(h3);
+      }
+
     </script>
   </body>
 </html>
