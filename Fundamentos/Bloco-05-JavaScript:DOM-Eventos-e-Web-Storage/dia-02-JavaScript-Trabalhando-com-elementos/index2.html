@@ -115,10 +115,33 @@
         unOrderList.appendChild(listNumbers);
       }
 
-      for ( let i = 0; i <= 3; i += 1) {
+      for ( let i = 1; i <= 3; i += 1) {
         let h3 = document.createElement('h3');
         main.appendChild(h3);
       }
+
+      const title = document.querySelector('h1');
+      title.className = 'title';
+
+
+      const tagH3 = document.querySelectorAll('h3');
+      for (let i = 0; i < tagH3.length; i +=1) {
+        tagH3[i].className = 'description';
+      }
+
+      const lefContent = document.getElementsByClassName('left-content')[0];
+      main.removeChild(lefContent);
+
+      const marginSectionRigth = document.getElementsByClassName('rigth-content')[0];
+      marginSectionRigth.style.marginRigth ='auto';
+
+      const backColor = document.getElementsByClassName('main-content')[0];
+      backColor.style.backgroundColor = 'green'
+
+      const lastList = document.getElementsByClassName('ul')[0];
+      lastList.removeChild(lastList.lastElementChild);
+      lastList.removeChild(lastList.lastElementChild);
+
 
     </script>
   </body>
