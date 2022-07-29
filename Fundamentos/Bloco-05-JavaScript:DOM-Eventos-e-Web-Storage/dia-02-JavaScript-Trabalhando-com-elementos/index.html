@@ -1,14 +1,25 @@
 <main id="paiDoPai">
-    <section id="pai">
-      <section id="primeiroFilho"></section>
+    <section id="pai">pai
+      <section id="primeiroFilho">primeiroFilho</section>
       <section id="elementoOndeVoceEsta">
-        <section id="primeiroFilhoDoFilho"></section>
-        <section id="segundoEUltimoFilhoDoFilho"></section>
+        <section id="primeiroFilhoDoFilho">primeiroFilhoDoFilho</section>
+        <section id="segundoEUltimoFilhoDoFilho">segundoEUltimoFilhoDoFilho</section>
       </section>
       Atenção!
-      <section id="terceiroFilho"></section>
-      <section id="quartoEUltimoFilho"></section>
+      <section id="terceiroFilho">terceiroFilho</section>
+      <section id="quartoEUltimoFilho">quartoEUltimoFilho</section>
     </section>
+
+    <div id="stark_childs">
+        <h2>Jon Snow</h2>
+        <h2>Sansa Stark</h2>
+        <h2>Bran Stark</h2>
+        <h2>Tony Stark</h2>
+        <h2>Arya Stark</h2>
+      </div>
+
+
+
   </main>
   <script>
     console.log(document.getElementById('elementoOndeVoceEsta'));
@@ -19,5 +30,41 @@
     console.log(document.getElementById('elementoOndeVoceEsta').nextSibling);
     console.log(document.getElementById('elementoOndeVoceEsta').nextElementSibling);
     console.log(document.getElementById('pai').lastElementChild.previousElementSibling);
+
+    let pai = document.getElementById('pai');
+    let irmaoElemento = document.createElement('section');
+    pai.appendChild(irmaoElemento);
+    console.log(document.getElementById('pai').lastElementChild);
+
+    let elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+    let filhoElementoOndeVoceEsta = document.createElement('section');
+    elementoOndeVoceEsta.appendChild(filhoElementoOndeVoceEsta);
+    console.log(document.getElementById('elementoOndeVoceEsta').lastElementChild);
+
+    let primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+    let filho = document.createElement('Section');
+    primeiroFilhoDoFilho.appendChild(filho);
+    filho.className = 'filhoMaisNovo'
+    console.log(document.getElementById('primeiroFilhoDoFilho').lastElementChild);
+    console.log(document.getElementsByClassName('filhoMaisNovo')[0].parentNode.parentNode.nextElementSibling);
+
+    let pai2 = document.getElementById('pai');
+    let todosFilhos = pai2.childNodes;
+
+    for (let i = todosFilhos.length -1; i >= 0 ; i -=1){
+        const filhoAtual = todosFilhos[i];
+
+        if (filhoAtual.id !== 'elementoOndeVoceEsta') {
+                filhoAtual.remove();
+        }
+    }
+
+    const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+    segundoEUltimoFilhoDoFilho.remove();
+
+    console.log(document.getElementById('stark_childs').lastElementChild.innerText);
+    document.createElement('p').className = 'texto';
+
+
 
   </script>
