@@ -14,13 +14,7 @@
       <div>
         <label for="nome">
           Nome:
-          <input
-            type="text"
-            id="nome"
-            name="nome-usuario"
-            maxlength="40"
-            minlength="10"
-          />
+          <input type="text" id="nome" name="nome-usuario" />
         </label>
       </div>
       <div>
@@ -93,8 +87,14 @@
       </div>
       <div>
         <label for="termoImg">
-          <input type="radio" id="termoImg" name="termoUsoImg" value="termo de
+          <input
+            type="radio"
+            id="termoImg"
+            name="termoUsoImg"
+            value="termo de
           consentimento uso de img"
+            required
+          />
         </label>
         Concordo que imagens das minhas férias poderão ser usadas na divulgação
         de concursos futuros.
@@ -103,15 +103,29 @@
       <button id="reset-button" type="reset">Limpar</button>
     </form>
     <script>
-        const submitButton = document.getElementById('submit-button');
-        submitButton.addEventListener('click', defaultButton);
+      const submitButton = document.getElementById("submit-button");
+      // submitButton.addEventListener('click', defaultButton);
 
-        function defaultButton(event) {
-            event.preventDefault();
+      // function defaultButton(event) {
+      //     event.preventDefault();
+      // }
+      const nomeUsuario = document.getElementById("nome");
+      const emailUsuario = document.getElementById("email");
+
+      function validaCaracteres() {
+        if (nomeUsuario.value.length < 10 || nomeUsuario.value.length > 40) {
+          alert("Dados Inválidos");
+          return
         }
 
+        else if (emailUsuario.value.length < 10 || emailUsuario.value.length > 60) {
+            alert("Dados Inválidos");
+          return
+        }
+        alert("Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.")
 
-
+      }
+      submitButton.addEventListener("click", validaCaracteres);
     </script>
   </body>
 </html>
