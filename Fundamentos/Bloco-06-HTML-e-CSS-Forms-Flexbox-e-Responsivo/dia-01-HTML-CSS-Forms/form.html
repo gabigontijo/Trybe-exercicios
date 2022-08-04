@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="cabecalho">
+      <h1>Tryber Trip</h1>
+    </header>
+    <form id="formulario">
+      <div>
+        <label for="nome">
+          Nome:
+          <input
+            type="text"
+            id="nome"
+            name="nome-usuario"
+            maxlength="40"
+            minlength="10"
+          />
+        </label>
+      </div>
+      <div>
+        <label for="email">
+          Email:
+          <input
+            type="email"
+            id="email"
+            name="email-usuario"
+            maxlength="50"
+            minlength="10"
+          />
+        </label>
+      </div>
+      <div>
+        <label for="destino">
+          <input
+            type="radio"
+            id="destino"
+            name="destino"
+            value="cidade"
+            checked
+          /> </label
+        >Cidade
+        <label for="destino2">
+          <input
+            type="radio"
+            id="destino2"
+            name="destino"
+            value="campo"
+          /> </label
+        >Campo
+        <label for="destino3">
+          <input
+            type="radio"
+            id="destino3"
+            name="destino"
+            value="praia"
+          /> </label
+        >Praia
+        <label for="destino4">
+          <input
+            type="radio"
+            id="destino4"
+            name="destino"
+            value="montanha"
+          /> </label
+        >Montanha
+      </div>
+      <div>
+        <p>
+          Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso
+          Trtbe Trip?
+        </p>
+        <label for="textTrip">
+          <textarea
+            name="textTrip"
+            id="textTrip"
+            cols="30"
+            rows="10"
+            maxlength="500"
+          ></textarea>
+        </label>
+      </div>
+      <div>
+        <p>Qual a melhor data para realizar sua viagem?</p>
+        <label for="dataViagem">
+          <input type="date" name="data" id="dataViagem" />
+        </label>
+      </div>
+      <div>
+        <label for="termoImg">
+          <input type="radio" id="termoImg" name="termoUsoImg" value="termo de
+          consentimento uso de img"
+        </label>
+        Concordo que imagens das minhas férias poderão ser usadas na divulgação
+        de concursos futuros.
+      </div>
+      <button id="submit-button" type="submit">Enviar</button>
+      <button id="reset-button" type="reset">Limpar</button>
+    </form>
+    <script>
+        const submitButton = document.getElementById('submit-button');
+        submitButton.addEventListener('click', defaultButton);
+
+        function defaultButton(event) {
+            event.preventDefault();
+        }
+
+
+
+    </script>
+  </body>
+</html>
