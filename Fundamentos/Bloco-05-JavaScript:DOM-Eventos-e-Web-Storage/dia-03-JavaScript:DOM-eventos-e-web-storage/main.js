@@ -12,6 +12,8 @@ const myWebpage = document.getElementById('my-spotrybefy');
 
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
+mento do Bloco 5
+Atividade em grupo
 
 const lis =  document.getElementsByTagName('li');
 
@@ -51,8 +53,9 @@ top3.addEventListener('mouseover', function() {
     this.style.backgroundColor = 'red';
 })
 top3.addEventListener('mouseleave', function() {
-    this.style.backgroundColor = '';
+        this.style.backgroundColor = '';
 })
+
 
 
 // Segue abaixo um exemplo do uso de event.target:
